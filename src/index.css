@@ -156,6 +156,18 @@ a {
   text-transform: uppercase;
   line-height: 1.4;
 }
+.about .description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.p-8 { padding: 2rem; }
+.p-12 { padding: 5rem; }
+
+@media (max-width: 768px) {
+  .p-12 { padding: 2rem; }
+}
 
 .hero p {
   font-size: 1.25rem;
