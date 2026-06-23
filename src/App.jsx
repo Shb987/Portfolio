@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="app">
       <header className="navbar">
-        <div className="logo">AS</div>
-        <nav>
+        <div className="logo">AHAMMED.AI</div>
+        <nav className="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
@@ -21,12 +21,19 @@ function App() {
       
       <main>
         <section id="hero" className="section hero">
-          <h1>Ahammed Shihabudeen</h1>
-          <h2>AI/ML Engineer</h2>
-          <p>Building scalable AI solutions with LLMs, RAG, and Computer Vision.</p>
+          <h2>// AI & Machine Learning Engineer</h2>
+          <h1>Ahammed <span>Shihabudeen</span></h1>
+          <p>
+            Architecting the future of intelligence through scalable LLM pipelines, 
+            RAG systems, and production-ready Computer Vision solutions.
+          </p>
           <div className="hero-btns">
-            <a href="https://github.com/Shb987" target="_blank" rel="noreferrer" className="btn primary">GitHub</a>
-            <a href="https://www.linkedin.com/in/shihab-ahmed-90b079245/" target="_blank" rel="noreferrer" className="btn secondary">LinkedIn</a>
+            <a href="https://github.com/Shb987" target="_blank" rel="noreferrer" className="btn primary">
+              View GitHub <span>→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shihab-ahmed-90b079245/" target="_blank" rel="noreferrer" className="btn secondary">
+              LinkedIn
+            </a>
           </div>
         </section>
 

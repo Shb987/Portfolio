@@ -27,14 +27,15 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="section projects">
-      <h3 className="section-title">Featured Projects</h3>
+      <h3 className="section-title">Experimental <span>Intelligence</span></h3>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="glass project-card">
+            <div className="project-image"></div>
             <div className="project-content">
+              <p className="role">{project.role}</p>
               <h4>{project.title}</h4>
               <h5>{project.subtitle}</h5>
-              <p className="role">{project.role}</p>
               <p className="desc">{project.description}</p>
               <div className="tech-tags">
                 {project.tech.map((t, i) => (

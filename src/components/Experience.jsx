@@ -34,15 +34,14 @@ const experiences = [
 const Experience = () => {
   return (
     <section id="experience" className="section experience">
-      <h3 className="section-title">Professional Journey</h3>
-      <div className="timeline">
+      <h3 className="section-title">Professional <span>Timeline</span></h3>
+      <div className="experience-list">
         {experiences.map((exp, index) => (
-          <div key={index} className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="glass timeline-content">
+          <div key={index} className="glass exp-item">
+            <div className="exp-period">{exp.period}</div>
+            <div className="exp-content">
               <h4>{exp.role}</h4>
               <h5>{exp.company}</h5>
-              <span className="period">{exp.period}</span>
               <ul>
                 {exp.points.map((p, i) => (
                   <li key={i}>{p}</li>

@@ -22,7 +22,7 @@ const skillData = [
 const Skills = () => {
   return (
     <section id="skills" className="section skills">
-      <h3 className="section-title">Technical Expertise</h3>
+      <h3 className="section-title">Technical <span>Stack</span></h3>
       <div className="skills-grid">
         {skillData.map((skill, index) => (
           <div key={index} className="glass skill-card">
