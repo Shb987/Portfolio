@@ -4,6 +4,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
+import profileImg from './assets/profile.jpg'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <section id="hero" className="section hero">
           <div className="profile-container">
             <img 
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=800&auto=format&fit=crop&q=60" 
+              src={profileImg} 
               alt="Ahammed Shihabudeen" 
               className="profile-img"
             />
