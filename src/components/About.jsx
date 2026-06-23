@@ -3,13 +3,18 @@ import React from 'react'
 const About = () => {
   return (
     <section id="about" className="section about">
-      <h3 className="section-title">The <span>Mission</span></h3>
+      <h3 className="section-title">The <span>Professional</span></h3>
       <div className="glass p-8">
-        <p className="description">
-          I am an AI/ML Engineer with a deep passion for building intelligent systems that solve real-world problems. 
-          Currently pursuing an MCA in Data Analytics, I specialize in developing scalable backends for AI-based applications, 
-          leveraging LLMs, RAG, and Computer Vision. I thrive on the intersection of data science and software engineering, 
-          ensuring that sophisticated models are not just accurate, but also production-ready and performant.
+        <p className="description" style={{ textAlign: 'left', lineHeight: '1.8' }}>
+          As a dedicated **AI & Machine Learning Engineer with 3+ years of professional experience**, 
+          I specialize in architecting and deploying high-performance intelligent systems. My expertise 
+          lies at the intersection of deep learning and scalable software engineering, with a proven 
+          track record in developing production-ready solutions using **LLMs, RAG, and Computer Vision**.
+          <br /><br />
+          I have a passion for transforming complex data into actionable intelligence, ensuring that 
+          AI models are not only mathematically sound but also robust, secure, and seamlessly 
+          integrated into enterprise workflows. My approach combines rigorous data analysis with 
+          modern DevOps practices to deliver AI that scales.
         </p>
       </div>
     </section>

@@ -139,7 +139,7 @@ a {
 
 .hero h1 {
   font-size: clamp(3rem, 8vw, 6rem);
-  line-height: 0.9;
+  line-height: 1.1; /* Increased to prevent overlap */
   margin-bottom: 2rem;
   background: linear-gradient(to bottom, #fff 40%, var(--text-dim));
   -webkit-background-clip: text;
@@ -149,11 +149,12 @@ a {
 
 .hero h2 {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* Slightly smaller to prevent overlap */
   color: var(--accent-primary);
   margin-bottom: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 .hero p {
@@ -186,6 +187,68 @@ a {
 .btn.primary:hover {
   background: var(--accent-primary);
   box-shadow: 0 0 30px var(--accent-glow);
+}
+
+/* Redesigned Contact Section */
+.contact-card {
+  padding: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-sub {
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact-method {
+  margin-bottom: 40px;
+}
+
+.contact-method .label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent-primary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contact-method .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  word-break: break-all;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.glass-btn {
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-border);
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+.glass-btn:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--accent-primary);
+  transform: translateX(10px);
 }
 
 .btn.secondary {

@@ -2,27 +2,27 @@ import React from 'react'
 
 const skillData = [
   {
-    category: "Programming & Frameworks",
-    items: ["Python", "R programming", "FastAPI", "Django", "Flask", "React.js"]
+    category: "AI & Deep Learning",
+    items: ["LLMs (GPT-4, Llama)", "RAG Pipelines", "Transformers (BERT, ViT)", "PyTorch", "TensorFlow", "OpenCV"]
   },
   {
-    category: "AI Tools & Libraries",
-    items: ["LLMs", "Librosa", "OpenCV", "DeepFace", "Scikit-learn", "TensorFlow"]
+    category: "LLM Ops & Data",
+    items: ["LangChain", "LlamaIndex", "Pinecone", "Vector DBs", "Scikit-learn", "Pandas"]
   },
   {
-    category: "Backend & Database",
-    items: ["REST APIs", "WebSockets", "MongoDB", "PostgreSQL", "SQLite", "NoSQL"]
+    category: "Engineering Stack",
+    items: ["Python", "FastAPI", "Django", "RESTful APIs", "WebSockets", "R Programming"]
   },
   {
-    category: "Cloud & DevOps",
-    items: ["Firebase", "Docker", "Git", "Linux", "AWS"]
+    category: "Architecture & Cloud",
+    items: ["AWS", "Docker", "Firebase", "MongoDB", "PostgreSQL", "CI/CD"]
   }
 ]
 
 const Skills = () => {
   return (
     <section id="skills" className="section skills">
-      <h3 className="section-title">Technical <span>Stack</span></h3>
+      <h3 className="section-title">Technical <span>Ecosystem</span></h3>
       <div className="skills-grid">
         {skillData.map((skill, index) => (
           <div key={index} className="glass skill-card">
