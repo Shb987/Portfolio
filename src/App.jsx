@@ -21,6 +21,13 @@ function App() {
       
       <main>
         <section id="hero" className="section hero">
+          <div className="profile-container">
+            <img 
+              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=800&auto=format&fit=crop&q=60" 
+              alt="Ahammed Shihabudeen" 
+              className="profile-img"
+            />
+          </div>
           <h2>// AI & Machine Learning Engineer</h2>
           <h1>Ahammed <span>Shihabudeen</span></h1>
           <p>
