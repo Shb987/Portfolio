@@ -39,7 +39,12 @@
   object-fit: cover;
   border-radius: 16px;
   will-change: transform;
-  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0) scale(1);
+  filter: contrast(1.02) brightness(1.02);
 }
 
 .tilted-card-overlay {
