@@ -5,6 +5,11 @@ import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import './App.css';
 
+// Project Images
+import mikiImg from './assets/miki.png';
+import pronunxImg from './assets/pronunx.png';
+import aiInterviewImg from './assets/ai_interview_bot.png';
+
 // Icons for tools
 import {
   ArrowRight,
@@ -202,21 +207,24 @@ const App = () => {
                 subtitle: 'AI-Powered EdTech Platform',
                 role: 'Backend & AI Engineer',
                 tech: ['Python', 'FastAPI', 'MongoDB', 'GPT-4o', 'RAG', 'WebSockets'],
-                desc: 'Built scalable backend for AI-based evaluation of handwritten exams using GPT-4o Vision + RAG pipelines.'
+                desc: 'Built scalable backend for AI-based evaluation of handwritten exams using GPT-4o Vision + RAG pipelines.',
+                img: mikiImg
               },
               {
                 title: 'PronunX',
                 subtitle: 'AI-Based Pronunciation Trainer',
                 role: 'ML & Backend Developer',
                 tech: ['Python', 'Django', 'Librosa', 'ML', 'SQLite'],
-                desc: 'An AI-driven web platform for real-time English pronunciation correction with audio feature extraction.'
+                desc: 'An AI-driven web platform for real-time English pronunciation correction with audio feature extraction.',
+                img: pronunxImg
               },
               {
                 title: 'AI Interview Bot',
                 subtitle: 'End-to-End Interview System',
                 role: 'Full-Stack & AI Developer',
                 tech: ['React', 'Django', 'OpenCV', 'DeepFace', 'PostgreSQL'],
-                desc: 'Integrated voice transcription and facial emotion analysis for non-verbal assessment during AI-driven interviews.'
+                desc: 'Integrated voice transcription and facial emotion analysis for non-verbal assessment during AI-driven interviews.',
+                img: aiInterviewImg
               },
             ].map((project, idx) => (
               <motion.div
@@ -228,12 +236,11 @@ const App = () => {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
               >
-                <div className="project-image ai-project-image">
+                <div className="project-image ai-project-image" style={{ backgroundImage: `url(${project.img})` }}>
                   <div className="ai-project-overlay">
                     <span className="ai-badge">AI Project</span>
                     <h4>{project.subtitle}</h4>
                   </div>
-                  <div className="ai-project-pattern"></div>
                 </div>
                 <div className="project-info">
                   <p className="project-role">{project.role}</p>
